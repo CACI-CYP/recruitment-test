@@ -1,5 +1,10 @@
 # Student/Exam Result API
 
+## Pre-requisites
+
+* At least Java 1.8 
+* Maven https://maven.apache.org/
+
 ## Objective
 
 Make the tests in `./src/test/java/uk/co/caci/cyp/mis/ApplicationTests.java` pass by writing the following REST API's:
@@ -25,7 +30,7 @@ should be calculated using the value in the `exam_result.result` column, use the
 
 A Spring Boot project with Spring Boot Starter Data JPA and Spring Boot Starter Web.
 
-Running an in memory H2 database. The database will be created and populated everytime
+Running an in memory` H2 database. The database will be created and populated everytime
 the application is started. The schema is defined in `./src/main/resources/schema.sql`, the data items are defined in
 `./src/main/resources/data.sql`.
 
