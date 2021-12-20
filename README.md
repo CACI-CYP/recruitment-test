@@ -25,7 +25,7 @@ should be calculated using the value in the `exam_result.result` column, use the
 
 A Spring Boot project with Spring Boot Starter Data JPA and Spring Boot Starter Web.
 
-Running an embedded H2 database. The database will be created and populated everytime
+Running an in memory H2 database. The database will be created and populated everytime
 the application is started. The schema is defined in `./src/main/resources/schema.sql`, the data items are defined in
 `./src/main/resources/data.sql`.
 
