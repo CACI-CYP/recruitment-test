@@ -12,7 +12,7 @@ Make the tests in `./src/test/java/uk/co/caci/cyp/mis/ApplicationTests.java` pas
 * `/api/student` to create a student record
 
 The `/api/exam-result/{id}/grade` API should return a JSON object with at least a grade property, e.g., `{"grade": "F"}`. The grade
-should be calculated using the value in `exam_result.result`, use the table below for mapping a result to a grade.
+should be calculated using the value in the `exam_result.result` column, use the table below for mapping a result to a grade.
 
 | Result         | Grade |
 |:---------------|:------|
@@ -29,8 +29,8 @@ Running an embedded H2 database. The database will be created and populated ever
 the application is started. The schema is defined in `./src/main/resources/schema.sql`, the data items are defined in
 `./src/main/resources/data.sql`.
 
-The H2 console can be accessed `/h2-console`. The JDBC URL will be logged to the console
-by Spring, the entry will look something like `H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9f512af6-45fe-45a2-9c9b-28c950fcba95'`.
+The H2 console can be accessed via `/h2-console`. The JDBC URL will be logged to the console
+by Spring during startup and the entry will look something like `H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9f512af6-45fe-45a2-9c9b-28c950fcba95'`.
 
 Use `next value for <seq_name>`, e.g., `next value for student_seq` to get the next value from a sequence in H2.
 
