@@ -74,7 +74,7 @@ public class ApplicationTests {
 
         this.mockMvc.perform(get("/api/exam-result/5/grade"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.grade", is("Bq")));
+                .andExpect(jsonPath("$.grade", is("B")));
     }
 
     @Test
