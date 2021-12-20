@@ -67,4 +67,4 @@ Use a service class to encapsulate business logic.
 
 Use Spring for injecting beans.
 
-Model the student exam result relationship using JPA annotations.
+Model the student amd exam result relationship using JPA annotations.
